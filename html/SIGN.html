@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SIGN</title>
+		<link rel="stylesheet" href="../css/webstyle.css" />
+		<style type="text/css">
+			.bg {
+            	background: url(../image/marvelphoto.jpg);
+            	height:618px;
+            	text-align: center;
+            	line-height: 618px;            	
+        	}
+     		.bg-blur {
+            	float: left;
+            	width: 100%;
+            	background-repeat: no-repeat;
+            	background-position: center;
+            	background-size: cover;
+            	-webkit-filter: blur(10px);
+            	-moz-filter: blur(10px);
+            	-o-filter: blur(10px);
+            	-ms-filter: blur(10px);
+            	filter: blur(5px);
+        	}
+    		.content-front {
+        		/*line-height: 618px;*/
+          		position:absolute;
+          		/*height: 618px;*/
+          		left: 35%;
+          		text-align: center;
+        	}
+			#content{
+				background-color: black;
+			}
+			#box{
+				margin: 0px;
+				height: 418px;
+				color: white;
+				font-size: 15px;
+				font: "微软雅黑";
+			}
+			.title{
+				margin: 0 auto;
+				text-align: center;
+				font-size: 30px;
+				height: 120px;
+				width: 100%;
+				line-height: 120px;
+			}
+			.wrapper {
+				width: 750px;
+				height: 450px;
+				border: 1px solid black;
+				margin: 50px auto;
+			}
+			.fixright{
+				text-align: right;
+			}
+			.labelsex{
+				float: left;
+			}
+		</style>
+		<style type="text/css">
+			input,
+			textarea {
+				padding: 4px;
+				border: solid 1px #414141;
+				outline: 0;
+				font: "微软雅黑";
+				width: 200px;
+				background: white;
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+				-moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 8px;
+				-webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 8px;
+			}
+			
+			input[type="radio"] {
+				width: 20px;
+				height: 20px;
+				opacity:1;
+			
+			label {
+				position: relative;
+				left: -20px;
+				top: 2px;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				border: 1px solid #999;
+			}
+			
+			input:checked+label {
+				background-color: #FE6D32;
+				/*border: 1px solid #fe6d32;*/
+			}
+			
+			input:checked+label::after {
+				position: absolute;
+				content: "";
+				width: 5px;
+				height: 10px;
+				top: 1px;
+				left: 2px;
+				border: 2px solid;
+				border-top: none;
+				border-left: none;
+				transform: rotate(45deg)
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header" class="w">
+        	<h1 class="logo">
+            	<a href="index.html">
+                	<img src="../image/logo-full.jpg" width="280" height="70"/>
+            	</a>
+            	
+        	</h1>
+        	<div class="login">
+        		<a href="LOGIN.html" >LOGIN</a>          	
+        	</div>
+        	<div class="sign-up">
+           		<a href="SIGN.html">SIGN</a>
+        	</div>
+        	<div class="navigator">
+        		
+           		<ul class="nav">
+               		<li class="active"><a href="#">NEWS</a></li>
+               		<li class="active"><a href="MOVIE.html">MOVIE</a></li>
+               		<li class="active"><a href="#">COMMIC</a></li>
+               		<li class="active"><a href="#">GAME</a></li>
+               		<li class="active"><a href="#">MORE</a></li>
+           		</ul>
+        	</div>
+        	
+    	</div>
+
+		<div id="content" class="w">
+			<div class="bg bg-blur"></div>
+			<div class="content-front">
+				<!--注册表开始-->
+				<div class="title">
+					<font color="white">Please Register Your Account.</font>
+				</div>
+				<!--表单代码-->
+				<div id="box" style="text-align: center">
+					<br />
+					<form action="login.jsp" method="post" onsubmit="return f_validate();">
+						<table style="margin: auto;border-spacing:0px 40px;">
+							<tr>
+								<td class="fixright">Username：</td>
+								<td><input type="text" name="username" id="username" placeholder="letters and numbers only." /></td>
+							</tr>
+							<tr>
+								<td class="fixright">Password：</td>
+								<td><input type="password" name="pwd" id="pwd" placeholder="Password cannot be empty." /></td>
+								<tr>
+									<td class="fixright">Email：</td>
+									<td><input type="text" name="email" id="email" /></td>
+								</tr>
+								<tr>
+									<td class="fixright">Sex：</td>
+									<td class="labelsex">
+										<input type="radio" name="xb" id="xb1" checked="" /><label for="xb1"></label><span> Man</span>
+										<input type="radio" name="xb" id="xb2" /><label for="xb2"></label><span> Woman</span>
+									</td>
+								</tr>
+		
+						</table>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset" />
+					</form>
+				</div>
+				<!--注册表结束-->
+    		</div>
+    		
+		</div>
+		<div id="footer" class="w">
+			
+			<div class="marvel">
+				<img src="../image/marvel.jpg"/ height="30" width="80">
+				</br>
+			</br>
+				<p><font color="lightgrey">@copyright 2008-2018 Marvel Studio from USA</font></p>
+
+			</div>
+		</div>
+		<script src="js/表单验证.js" type="text/javascript" charset="utf-8"></script>
+		
+
+	</body>
+</html>
+
+	</body>
+</html>

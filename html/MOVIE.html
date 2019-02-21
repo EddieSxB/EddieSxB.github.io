@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MOVIE</title>
+		<link rel="stylesheet" href="../css/webstyle.css" />
+		<style type="text/css">
+			
+			.bg {
+            	background:url(../image/背景2.jpg);
+            	height:618px;
+            	text-align: center;
+            	line-height: 618px;            	
+        	}
+     		.bg-blur {
+            	float: left;
+            	width: 100%;
+            	background-repeat: no-repeat;
+            	background-position: center;
+            	background-size: cover;
+            	-webkit-filter: blur(10px);
+            	-moz-filter: blur(10px);
+            	-o-filter: blur(20px);
+            	-ms-filter: blur(20px);
+            	filter: blur(3px);
+        	}
+    		.content-front {
+        		height: 556.2px;
+          		position:absolute;
+          		top: 15%;
+          		left: 20%;
+          		text-align: center;
+          		box-shadow:0px,0px,10px,10px,lightgrey;
+          		-webkit-box-shadow: 0 0 15px 8px white;
+        	}
+			#content{
+				background-color: black;
+			}
+			.m{
+				width: 900px;
+			}
+			#moviepic{
+				height: 506.2px;
+			}
+			#moviepic form{
+				width: 900px;
+				height: 556.2px;
+			
+			}
+			#moviepic a{
+				float: left;
+				color: white;
+				position: relative;
+				left: 10px;
+			}
+			#moviepic a p{
+				float: right;
+				line-height: 50px;
+				font-size: 20px;
+			}
+			#moviepic .topdiv{
+				height: 50px;
+			}
+			#moviepic li{
+				float: left;
+				width: 225px;
+				height: 50px;
+				text-align: center;
+				background-color:#2B2B2B;
+				font-size: 30px;
+				border: 5px,darkred,solid;
+			}
+			#moviepic .bottomdiv{
+				text-align: center;
+				height: 506.2px;
+			}
+			.bottomdiv div{
+				height: 100%;
+				display: none;
+			}
+			.bottomdiv .show{
+				display: block;
+			}
+			.apic{
+				padding: 10px;
+				height: 30px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="header" class="w">
+        	<h1 class="logo">
+            	<a href="index.html">
+                	<img src="../image/logo-full.jpg" width="280" height="70"/>
+            	</a>
+            	
+        	</h1>
+        	<div class="login">
+        		<a href="LOGIN.html" >LOGIN</a>          	
+        	</div>
+        	<div class="sign-up">
+           		<a href="SIGN.html">SIGN</a>
+        	</div>
+        	<div class="navigator">
+        		
+           		<ul class="nav">
+               		<li class="active"><a href="#">NEWS</a></li>
+               		<li class="active"><a href="MOVIE.html">MOVIE</a></li>
+               		<li class="active"><a href="#">COMMIC</a></li>
+               		<li class="active"><a href="#">GAME</a></li>
+               		<li class="active"><a href="#">MORE</a></li>
+           		</ul>
+        	</div>
+        	
+    	</div>
+
+		<div id="content" class="w">
+			<div class="bg bg-blur"></div>
+			<div class="content-front">
+				<div id="moviepic" class="m">
+					<form action="">
+					
+						<div class="topdiv">
+							<ul>
+								<li><a href="#"><img src="../image/logo-stark.jpg" class="apic"/><p>STARK</p></a></li>
+								<li><a href="#"><img src="../image/logo-thor.jpg" class="apic"/><p>THOR</p></a></li>
+								<li><a href="#"><img src="../image/logo-steve.jpg" class="apic"/><p>CAPTAIN</p></a></li>
+								<li><a href="#"><img src="../image/logo-hulk.jpg" class="apic"/><p>HULK</p></a></li>
+							</ul>
+						</div>
+						<div class="bottomdiv">
+							<div class="show"><img src="../image/铁人.jpg" width="900"/></div>
+							<div><img src="../image/雷神.jpg" width="900"/></div>
+							<div><img src="../image/美队.jpg" width="900"></div>
+							<div><img src="../image/浩克.jpg" width="900"/></div>
+						</div>
+					
+					</form>
+				</div>
+    		</div>
+    		
+		</div>
+		<div id="footer" class="w">
+			
+			<div class="marvel">
+				<img src="../image/marvel.jpg"/ height="30" width="80">
+				</br>
+			</br>
+				<p><font color="lightgrey">@copyright 2008-2018 Marvel Studio from USA</font></p>
+
+			</div>
+		</div>
+		<script>
+			var oTopDiv = document.getElementsByClassName("topdiv")[0];
+			var oAs = oTopDiv.getElementsByTagName("a");
+			var oBottomDiv = document.getElementsByClassName("bottomdiv")[0];
+			var oDivs = oBottomDiv.getElementsByTagName("div");
+			for(var i=0;i<oAs.length;i++){
+				oAs[i].index = i;
+				oAs[i].onmouseover = function(){
+					for(var j=0;j<oDivs.length;j++){
+						if(this.index == j){
+							oDivs[j].className = "show";
+						}else{
+							oDivs[j].className = "";
+						}
+					}
+				}
+			}			
+		</script>
+		
+
+	</body>
+</html>
+
+	</body>
+</html>

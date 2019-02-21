@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Avengers</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    	<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" href="../css/webstyle.css" />
+
+	</head>
+	<body>
+		<div id="header" class="w">
+        	<h1 class="logo">
+            	<a href="index.html">
+                	<img src="../image/logo-full.jpg" width="280" height="70"/>
+            	</a>
+            	
+        	</h1>
+        	<div class="login">
+        		<a href="LOGIN.html" >LOGIN</a>          	
+        	</div>
+        	<div class="sign-up">
+           		<a href="SIGN.html">SIGN</a>
+        	</div>
+        	<div class="navigator">
+        		
+           		<ul class="nav">
+               		<li class="active"><a href="#">NEWS</a></li>
+               		<li class="active"><a href="MOVIE.html">MOVIE</a></li>
+               		<li class="active"><a href="#">COMMIC</a></li>
+               		<li class="active"><a href="#">GAME</a></li>
+               		<li class="active"><a href="#">MORE</a></li>
+           		</ul>
+        	</div>
+        	
+    	</div>
+
+		<div id="content" class="w">
+				<div class="swiper-container">
+       				<div class="swiper-wrapper">
+       			
+            			<div class="swiper-slide"><img src="../image/stark.jpeg" height="618"></div>
+            			<div class="swiper-slide"><img src="../image/thor.jpeg" height="618" /></div>
+            			<div class="swiper-slide"><img src="../image/steve.jpeg" height="618"/></div>
+            			<div class="swiper-slide"><img src="../image/hulk.jpeg" height="618"/></div>
+            			<div class="swiper-slide"><img src="../image/blackwidow.jpeg" height="618"/></div>
+            			<div class="swiper-slide"><img src="../image/hawkeye.jpeg" height="618"/></div>
+        			</div>
+        		</div>
+    		
+		</div>
+		<div id="footer" class="w">
+			
+			<div class="marvel">
+				<img src="../image/marvel.jpg"/ height="30" width="80">
+				</br>
+			</br>
+				<p><font color="lightgrey">@copyright 2008-2018 Marvel Studio from USA</font></p>
+
+			</div>
+		</div>
+		<script src="../js/swiper.min.js"></script>
+		<script>
+    		var swiper = new Swiper('.swiper-container', {
+        		pagination: '.swiper-pagination',
+        		nextButton: '.swiper-button-next',
+        		prevButton: '.swiper-button-prev',
+        		paginationClickable: true,
+        		spaceBetween: 30,
+        		centeredSlides: true,
+        		autoplay: 2500,
+        		autoplayDisableOnInteraction: false
+    		});
+    	</script>
+
+	</body>
+</html>
+
